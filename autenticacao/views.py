@@ -4,7 +4,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def cadastro(request):
-    return HttpResponse('Cadastro')
+    return render(request, 'cadastro.html')
 
 
 def logar(request):
