@@ -58,14 +58,14 @@
                     <tr>
                         <th scope="row"><img width="100px" src="{{job.referencias.all.0}}"></th>
                         <td>{{job.titulo}}</td>
-                        <td>{{job.categoria}}</td>
                         <td>
                             {% if job.categoria == 'D' %}
-                                Design
+                            Design
                             {% else %}
-                                Edição de Vídeo
+                            Edição de Vídeo
                             {% endif %}
                         </td>
+                        <td>{{job.descricao}}</td>
                         <td>
                             {% if job.status == 'AA' %}
                                 <span class="badge badge-info">Aguardando aprovação</span>
